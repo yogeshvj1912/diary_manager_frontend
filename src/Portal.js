@@ -279,7 +279,7 @@ const selectDate = (date) => {
         <div id="addEvent">
           <h2>Add Event</h2>
           <input
-           autoComplete='off'
+           autoComplete="off"
             type="text"
             id="txtTitle"
             placeholder="Event Title"
