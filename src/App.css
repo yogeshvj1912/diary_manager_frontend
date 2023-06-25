@@ -1,0 +1,266 @@
+
+
+
+ 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  user-select: none;
+}
+.login-page{
+background-image: url("https://img.freepik.com/premium-photo/white-paper-desk-calendar-wood-table-top-with-blurred-office-interior-background-appointment-business-meeting-concept_293060-3121.jpg?w=1380");
+background-repeat: no-repeat; 
+background-size: cover;
+width: 100vw;
+height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.shadow-lg{
+  width: 30%;
+  background-color: white;
+  opacity: 0.9;
+}
+.signup{
+  background-image: url("https://img.freepik.com/free-vector/coloured-blurred-background_1112-511.jpg?w=740&t=st=1687615759~exp=1687616359~hmac=4236a7a9cc248291065ba9711f1b704745bcf53715d646bca4f8cbcc20a38fd7");
+  background-repeat: no-repeat; 
+background-size: cover;
+width: 100vw;
+height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.body {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("./images/img.jpg");
+  background-size: cover;
+  background-color: #ff5252;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.main {
+  background-image: url("https://images.pexels.com/photos/953626/pexels-photo-953626.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+background-size: cover;
+  width: 74.5em;
+}
+
+.heading {
+  padding:8px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.heading #months {
+  color: #ff5252;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+button {
+  width: 75px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  padding: 5px;
+  
+  color: white;
+}
+
+
+.heading button {
+  height: 35px;
+  border-radius: 20px;
+  background-color: #ff5252;
+}
+.weekday {
+  width: 100%;
+  display: flex;
+  background-color: #2f3640;
+  font-size: 17px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.weekday div {
+  width: 169px;
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#calendar {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.day {
+  width: 160px;
+  height: 90px;
+  padding: 5px;
+  cursor: pointer;
+  margin: 5px;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 1px #cbd4c2;
+  color: #ffffff;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+
+
+.empty-days{
+  width: 160px;
+  height: 85px;
+  padding: 10px;
+  margin: 5px;
+  box-sizing: border-box;
+
+  
+}
+
+.day:hover {
+  background-color: rgba(21, 20, 20, 0.829);
+  color: #ffffff;
+}
+
+.today {
+background-color:#2f3640;
+  color: #00ecf8;
+  font-weight: 700;
+}
+.events-main{
+  height: 55px ;
+  overflow: scroll;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.event {
+  font-size: 11px;
+  text-align: center;
+  padding: 3px;
+  background-color: #00ff2f;
+  color: #000000;
+  border-radius: 3px;
+ height: 25px; 
+  max-width: 100%;
+overflow: scroll;
+margin: 2px;
+}
+::-webkit-scrollbar{
+  display: none;
+}
+.days{
+  margin: 3px;
+}
+
+.day-holiday{
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+}
+.holiday {
+  display: inline;
+  max-width: 85%;
+  max-height: 20px; 
+  margin-top: 4px;
+  font-size: 12px;
+  text-align: center;
+  padding: 2px;
+  background-color: #080808a8;
+  color: #ff5252;
+  border-radius: 5px;
+ 
+overflow: scroll;
+
+}
+
+.plain {
+  cursor: default;
+  box-shadow: none;
+}
+
+#modal {
+ 
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+#addEvent{
+ 
+  width: 350px;
+ 
+  background-color: #fff;
+  padding: 25px;
+  position: absolute;
+  z-index: 20;
+}
+
+#addEvent h2 {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+#txtTitle {
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+  border-radius: 3px;
+  outline: none;
+  border: 1px solid #cbd4c2;
+  font-size: 16px;
+}
+
+#btnSave {
+  border-radius: 20px;
+  background-color: #2ed573;
+}
+
+.btnClose {
+  margin-left:10px ;
+  border-radius: 20px;
+  background-color: #2f3542;
+}
+
+
+
+.error {
+  border-color: #ea2027 !important;
+}
+
+
+
+
+#logout{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+.logout{
+  background-color: #95ff00;
+  color: #000000;
+  border-radius:20px;
+
+}
